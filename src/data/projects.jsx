@@ -1,17 +1,16 @@
 import { FaAws, FaC, FaDocker, FaNodeJs, FaPython, FaReact } from 'react-icons/fa6'
-import { SiAwselasticloadbalancing, SiCss3, SiD3Dotjs, SiDjango, SiFlask, SiGooglecloud, SiHtml5, SiJquery, SiKubernetes, SiMongodb, SiMysql, SiPuppet, SiTensorflow, SiTypescript } from 'react-icons/si'
+import { SiAwselasticloadbalancing, SiCss3, SiD3Dotjs, SiDjango, SiFlask, SiGooglecloud, SiHtml5, SiJquery, SiKubernetes, SiMongodb, SiMysql, SiPuppet, SiSocketdotio, SiTensorflow, SiTypescript } from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io5'
 import { BiLogoPostgresql } from 'react-icons/bi'
 import { DiDigitalOcean, DiRedis } from 'react-icons/di'
 import { FcLinux } from 'react-icons/fc'
-import.meta.env
 
-const python = < FaPython size={40} />
-const javaScript = <IoLogoJavascript size={40} />
+const python = <FaPython size={30} />
+const javaScript = <IoLogoJavascript size={30} />
 const flask = <SiFlask />
 const react = <FaReact />
 const linux = <FcLinux />
-const typeScript = <SiTypescript size={40} />
+const typeScript = <SiTypescript size={30} />
 const C = <FaC size={40} />
 const django = <SiDjango />
 const tensorFlow = <SiTensorflow />
@@ -31,6 +30,7 @@ const digitalOcean = <DiDigitalOcean />
 const html = <SiHtml5 />
 const css = <SiCss3 />
 const loadbalancer = <SiAwselasticloadbalancing />
+const socket = <SiSocketdotio />
 
 export const PROJECTS = [
     {
@@ -68,5 +68,17 @@ export const PROJECTS = [
         github: "",
         stack: [html, css, javaScript, python, linux, flask, puppet, loadbalancer, digitalOcean],
         features: ["✨Auto-scaling ✨API Integration ✨Responsive Frontend ✨Database Persistence/Migration ✨User Authentication ✨User Authorization ✨Admin Dashboard ✨Custom CLI"]
+    },
+    {
+        id: 4,
+        title: "Coders' Talk",
+        datetime: "10-May-2023",
+        link: "https://coders-talk.onrender.com/",
+        thumbnail: "Images/chatting_.webp",
+        headline: "A scalable realtime chat application built for developers to interact between themselves.",
+        loom: "https://www.loom.com/share/fa035bfeac1a4beba4cb280f44979577?sid=7e7f9a8d-4535-4df4-b382-3520ccf62d95",
+        github: "https://github.com/Usool-Data-Science/coders-talk",
+        stack: [html, css, javaScript, python, socket],
+        features: ["✨Auto-scaling ✨Web Socket ✨Responsive Frontend"]
     },
 ]
