@@ -1,29 +1,28 @@
 import { Card, CardBody, CardFooter, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const ProjectNotFound = ({ searchProject }) => {
     const QUERY = searchProject.length ? (searchProject).toLowerCase() : '';
+    const BASE_URL = import.meta.env.BASE_URL;
     return (
         <>
-            <Card maxW='lg' display={"flex"} alignItems={"center"} fontSize={"1.5rem"} p={"5px"}>
-                <CardBody alignItems={"center"}>
+            <Card maxW='lg' display={"flex"} alignItems={"center"} fontSize={"1.5rem"} p={"5px"} m={"1.5rem"}>
+                <CardBody alignItems={"center"} align={"justify"}>
                     <Stack mt='6' spacing='3'>
-                        <Heading >No blog post on {QUERY} yet!</Heading>
+                        <Heading >Sorry project on {QUERY} aren't uploaded yet!</Heading>
                         <Text>
-                            How about I write a post on {QUERY}, would it be great?
+                            While I am working on uploading all my project which are related to {QUERY}, how about you take a look at the <Link to='/blogs' style={{ textDecoration: "underline" }}> blog</Link> posts to quench your thirst?
                         </Text>
                     </Stack>
                 </CardBody>
                 <CardFooter >
                     <Image
-                        src='src/Images/thinking.png'
+                        src={BASE_URL + 'Images/thinking.png'}
                         alt='Thinking about writing new blog'
                         borderRadius='lg'
                     />
 
                 </CardFooter>
-                <Text pb={"1rem"}>
-                    You can find all my blog posts <a href="https://dev.to/usooldatascience" style={{ textDecoration: "underline" }}>here</a> anyways!
-                </Text>
             </Card>
         </>
     )

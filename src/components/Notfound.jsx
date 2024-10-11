@@ -1,7 +1,9 @@
 import { Card, CardBody, CardFooter, Heading, Image, Stack, Text } from "@chakra-ui/react"
 
+
 const Notfound = ({ searchPost }) => {
     const QUERY = searchPost.length ? (searchPost).toLowerCase() : '';
+    const BASE_URL = import.meta.env.BASE_URL;
     return (
         <>
             <Card maxW='lg' display={"flex"} alignItems={"center"} fontSize={"1.5rem"} p={"5px"}>
@@ -15,7 +17,7 @@ const Notfound = ({ searchPost }) => {
                 </CardBody>
                 <CardFooter >
                     <Image
-                        src='src/Images/thinking.png'
+                        src={BASE_URL + 'Images/thinking.png'}
                         alt='Thinking about writing new blog'
                         borderRadius='lg'
                     />

@@ -7,7 +7,7 @@ const Blogs = ({ searchPost, setSearchPost, blogPosts }) => {
     setSearchPost(e.target.innerText);
   }
   return (
-    <Stack >
+    <Stack flexGrow={"1"}>
       <Text className="Description"
         style={{
           fontSize: "1.5rem", margin: "1rem", align: "justify"
