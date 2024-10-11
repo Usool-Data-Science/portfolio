@@ -34,61 +34,67 @@ const Home = () => (
         <Tooltip hasArrow label='View Resume' bg='gray.300' color='black'>
           <Button colorScheme='teal' size='lg' mt={5}>
             <Flex flexWrap={"nowrap"} gap={"5px"}
-              alignItems={"center"}
+              alignItems={"center"} justifyContent={"center"}
             >
               <a href='https://drive.google.com/file/d/1aLOmREEl9BA4Y-tJ-xLSop_3_aXCGnjQ/view?usp=sharing' target='_blank'><FaFilePdf size={30} /></a>
               <span>My Resume</span>
             </Flex>
-
-
           </Button>
         </Tooltip>
       </Box>
 
       <div className='Description'>
-        <h1 style={{ fontSize: '2rem', fontWeight: 'bolder' }}>About Me</h1>
-        <p>
-          I am an innovative software engineer with a proven track record in designing and developing intelligent applications,
-          efficient data processing solutions, and robust backend systems. My expertise lies in leveraging the following cutting-edge technologies
-          to deliver high-quality, scalable, and maintainable software solutions that drive business success:
-        </p>
+        {/* Profile Summary */}
+        <Box>
+          <h1 style={{ fontSize: '2rem', fontWeight: 'bolder' }}>About Me</h1>
+          <p>
+            I am an innovative software engineer with a proven track record in designing and developing intelligent applications,
+            efficient data processing solutions, and robust backend systems. My expertise lies in leveraging the following cutting-edge technologies
+            to deliver high-quality, scalable, and maintainable software solutions that drive business success:
+          </p>
 
-        <div className='stack'>
-          <span className='subHeading'>Programming Languages:</span>
-          <FaPython size={40} />
-          <IoLogoJavascript size={40} />
-          <SiTypescript size={35} />
-          <FaC size={38} />
-        </div>
+          <div className='stack'>
+            <span className='subHeading'>Programming Languages:</span>
+            <FaPython size={40} />
+            <IoLogoJavascript size={40} />
+            <SiTypescript size={35} />
+            <FaC size={38} />
+          </div>
 
-        <div className='stack'>
-          <span className='subHeading'>Frameworks and Libraries:</span>
-          <SiFlask />
-          <SiDjango />
-          <SiTensorflow />
-          <FaReact />
-          <FaNodeJs />
-          <SiJquery />
-          <SiD3Dotjs />
-        </div>
+          <div className='stack'>
+            <span className='subHeading'>Frameworks and Libraries:</span>
+            <SiFlask />
+            <SiDjango />
+            <SiTensorflow />
+            <FaReact />
+            <FaNodeJs />
+            <SiJquery />
+            <SiD3Dotjs />
+          </div>
 
-        <div className='stack'>
-          <span className='subHeading'>Databases:</span>
-          <SiMysql />
-          <SiMongodb />
-          <BiLogoPostgresql />
-          <DiRedis />
-        </div>
+          <div className='stack'>
+            <span className='subHeading'>Databases:</span>
+            <SiMysql />
+            <SiMongodb />
+            <BiLogoPostgresql />
+            <DiRedis />
+          </div>
 
-        <div className='stack'>
-          <span className='subHeading'>DevOps and Cloud:</span>
-          <FaAws />
-          <SiGooglecloud />
-          <FaDocker />
-          <SiKubernetes />
-          <SiPuppet />
-          <FcLinux />
-        </div>
+          <div className='stack'>
+            <span className='subHeading'>DevOps and Cloud:</span>
+            <FaAws />
+            <SiGooglecloud />
+            <FaDocker />
+            <SiKubernetes />
+            <SiPuppet />
+            <FcLinux />
+          </div>
+        </Box>
+        {/* Education */}
+        <Box>
+          <h1 style={{ fontSize: '2rem', fontWeight: 'bolder' }}>About Me</h1>
+        </Box>
+
       </div>
 
     </Flex>
@@ -119,7 +125,7 @@ const Home = () => (
           </Flex>
         </CardHeader>
         <CardBody>
-          <Text>
+          <Text align="justify" lineHeight="2rem" fontSize="1rem">
             You have a natural talent for simplifying complicated tasks, and your ability to debug and resolve issues across both front-end and back-end is truly commendable.
           </Text>
         </CardBody>
@@ -138,7 +144,7 @@ const Home = () => (
           </Flex>
         </CardHeader>
         <CardBody>
-          <Text>
+          <Text align="justify" lineHeight="2rem" fontSize="1rem">
             Your API integrations between the React front-end and Python backend are flawless. The seamless data flow and reliable communication between components truly enhance the user experience.
           </Text>
         </CardBody>
@@ -157,7 +163,7 @@ const Home = () => (
           </Flex>
         </CardHeader>
         <CardBody>
-          <Text>
+          <Text align="justify" lineHeight="2rem" fontSize="1rem">
             Your proactive approach to ensuring both code quality and user experience, combined with your attention to detail in security and performance, sets you apart as a top-tier engineer.
           </Text>
         </CardBody>
@@ -176,7 +182,7 @@ const Home = () => (
           </Flex>
         </CardHeader>
         <CardBody>
-          <Text>
+          <Text align="justify" lineHeight="2rem" fontSize="1rem">
             Your React code is always clean, efficient, and follows best practices. It’s clear that you prioritize maintainability and scalability, making it easy for others to follow and build upon your work.
           </Text>
         </CardBody>
@@ -195,7 +201,7 @@ const Home = () => (
           </Flex>
         </CardHeader>
         <CardBody>
-          <Text>
+          <Text align="justify" lineHeight="2rem" fontSize="1rem">
             Your proficiency in both React and Python backend development is outstanding! Your ability to bridge front-end and back-end seamlessly shows your deep understanding of full-stack development.
           </Text>
         </CardBody>
@@ -214,7 +220,7 @@ const Home = () => (
           </Flex>
         </CardHeader>
         <CardBody>
-          <Text>
+          <Text align="justify" lineHeight="2rem" fontSize="1rem">
             I’m consistently impressed by how quickly you solve complex issues on the Python backend. Your grasp of server-side logic and optimization really strengthens the overall system performance.
           </Text>
         </CardBody>
