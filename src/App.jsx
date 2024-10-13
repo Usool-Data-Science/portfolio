@@ -25,8 +25,9 @@ function App() {
 
   useEffect(() => {
     const result = PROJECTS.filter(project => (
-      (project.title.toLowerCase()).includes(searchProject.toLowerCase()) ||
-      (project.headline.toLowerCase()).includes(searchProject.toLowerCase())
+      // (project.title.toLowerCase()).includes(searchProject.toLowerCase()) ||
+      // (project.headline.toLowerCase()).includes(searchProject.toLowerCase())
+      (project.stack_string.toLowerCase()).includes(searchProject.toLowerCase())
     ));
     setProjectResult(result.length ? result :
       searchProject.length ? [] : PROJECTS);

@@ -37,7 +37,11 @@ const Projects = ({ searchProject, setSearchProject, projects }) => {
             <Button variant='solid' onClick={handleSearch}>Python</Button>
             <Button variant='solid' onClick={handleSearch}>TypeScript</Button>
             <Button variant='solid' onClick={handleSearch}>JavaScript</Button>
-            <Button variant='solid' onClick={handleSearch}>NodeJs</Button>
+            <Button variant='solid' onClick={handleSearch}>Nextjs</Button>
+            <Button variant='solid' onClick={handleSearch}>MongoDB</Button>
+            <Button variant='solid' onClick={handleSearch}>Django</Button>
+            <Button variant='solid' onClick={handleSearch}>React</Button>
+            <Button variant='solid' onClick={handleSearch}>Nodejs</Button>
           </ButtonGroup>
         </CardFooter>
       </Card>

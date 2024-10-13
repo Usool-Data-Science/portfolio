@@ -1,6 +1,6 @@
 import { Avatar, Box, Button, Card, CardBody, CardHeader, Flex, Grid, Heading, Stack, Text, Tooltip } from '@chakra-ui/react'
 import '../index.css'
-import { FaAws, FaC, FaDocker, FaLinkedin, FaNodeJs, FaPython, FaReact, FaSquareGithub, FaStackOverflow } from 'react-icons/fa6'
+import { FaAws, FaC, FaDocker, FaLinkedin, FaNodeJs, FaPython, FaReact, FaSquareGithub, FaStackOverflow, FaUserGraduate, FaUserTie } from 'react-icons/fa6'
 import { SiD3Dotjs, SiDjango, SiFlask, SiGmail, SiGooglecloud, SiJquery, SiKubernetes, SiMongodb, SiMysql, SiPuppet, SiTensorflow, SiTypescript } from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io5'
 import { BiLogoPostgresql } from 'react-icons/bi'
@@ -12,7 +12,7 @@ const BASE_URL = import.meta.env.BASE_URL;
 const Home = () => (
   <Stack flexGrow={"1"} justifyContent={"flex-start"}>
     <Flex flexFlow={{ base: "column", lg: "row" }} justifyContent={"center"}
-      alignItems={"center"} m={5} gap={10}>
+      alignItems={"flex-start"} m={5} gap={10}>
       <Box className='Name'>
         <span className='Hero'>ADESHINA IBRAHIM</span>
         <span style={{ fontSize: "1.5rem" }}>Software Engineer</span>
@@ -90,11 +90,6 @@ const Home = () => (
             <FcLinux />
           </div>
         </Box>
-        {/* Education */}
-        <Box>
-          <h1 style={{ fontSize: '2rem', fontWeight: 'bolder' }}>About Me</h1>
-        </Box>
-
       </div>
 
     </Flex>
