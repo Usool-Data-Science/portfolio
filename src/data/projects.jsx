@@ -159,7 +159,7 @@ export const PROJECTS = [
         id: 10,
         title: "Sales Metric",
         datetime: "30-Oct-2024",
-        link: "https://sales-metric.vercel.app/orders",
+        link: "https://sales-metric.vercel.app/",
         thumbnail: "Images/salesMetric.png",
         headline: "A dynamic, responsive dashboard that presents sales and income performance through animated data visualizations for non-technical audiences. Leveraging the React library Recharts, it animates individual plot components seamlessly, while Tailwind CSS enhances the design’s complexity and responsiveness. Additionally, it includes a user profile section, enabling users to manage activities and settings efficiently.",
         loom: "",
