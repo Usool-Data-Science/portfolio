@@ -155,4 +155,17 @@ export const PROJECTS = [
         stack_string: "html, css, react, mongoDb, tailwindcss, express, nodeJs",
         features: ["✨Watch Trailers ✨Responsive Frontend ✨Authentication with JWT ✨Caching ✨Payment method ✨Recommendation System ✨User profile ✨Shopping Cart"]
     },
+    {
+        id: 10,
+        title: "Sales Metric",
+        datetime: "30-Oct-2024",
+        link: "https://sales-metric.vercel.app/orders",
+        thumbnail: "Images/salesMetric.png",
+        headline: "A dynamic, responsive dashboard that presents sales and income performance through animated data visualizations for non-technical audiences. Leveraging the React library Recharts, it animates individual plot components seamlessly, while Tailwind CSS enhances the design’s complexity and responsiveness. Additionally, it includes a user profile section, enabling users to manage activities and settings efficiently.",
+        loom: "",
+        github: "https://github.com/Usool-Data-Science/salesMetric",
+        stack: [html, css, react, tailwindcss],
+        stack_string: "html, css, react, tailwindcss",
+        features: ["✨Animated Plots ✨Responsive Frontend ✨User's Profile"]
+    },
 ]
