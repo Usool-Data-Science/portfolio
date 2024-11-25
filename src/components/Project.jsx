@@ -41,7 +41,15 @@ const Project = ({ project }) => {
 
                     </CardBody>
 
-                    <CardFooter style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: "1.5rem", flexWrap: "wrap" }} gap={"3rem"} direction={{ base: 'column', lg: 'row' }} >
+                    <CardFooter
+                        display="flex"
+                        justifyContent="space-between"
+                        alignItems="center"
+                        fontSize="1.5rem"
+                        flexWrap="wrap"
+                        gap="3rem"
+                        flexDirection={{ base: 'column', lg: 'row' }} // Responsive flex direction
+                    >
                         <Box>
                             <Flex gap={5} alignItems={"center"}>
                                 <h2 style={{ fontWeight: "bolder" }}>Tech Stack:</h2>
