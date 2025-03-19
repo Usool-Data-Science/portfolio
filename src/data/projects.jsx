@@ -197,4 +197,18 @@ export const PROJECTS = [
         stack_string: "mysql, githubactions, python, flask",
         features: ["✨REST API ✨Database Migration, ✨Caching,✨Automated DevOps"]
     },
+    {
+        id: 13,
+        title: "MernChat",
+        datetime: "29-Dec-2024",
+        render: 1,
+        link: "https://mern-chat-app-1lwr.onrender.com",
+        thumbnail: "Images/mern-chat-app.png",
+        headline: "A fullstack realtime chat application that enhance seamingless communication between 2 users.",
+        loom: "",
+        github: "https://github.com/Usool-Data-Science/mern-chat-app",
+        stack: [mongoDb, react, nodeJs, express, socket, tailwindcss],
+        stack_string: "mongoDb, react.js, node.js, express.js, socket.io, tailwindCSS",
+        features: ["✨REST API ✨Database Migration, ✨Caching,✨Authentication and Authorization, ✨State management, ✨Realtime messaging."]
+    },
 ]
