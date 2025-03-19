@@ -1,41 +1,42 @@
 import { FaAws, FaC, FaDocker, FaNodeJs, FaPython, FaReact } from 'react-icons/fa6'
-import { SiAwselasticloadbalancing, SiCss3, SiD3Dotjs, SiDjango, SiExpress, SiFlask, SiGooglecloud, SiHtml5, SiJquery, SiKubernetes, SiMongodb, SiMysql, SiNextdotjs, SiPrisma, SiPuppet, SiSocketdotio, SiStripe, SiTailwindcss, SiTensorflow, SiTypescript } from 'react-icons/si'
+import { SiAwselasticloadbalancing, SiCss3, SiD3Dotjs, SiDjango, SiExpress, SiFlask, SiGithubactions, SiGooglecloud, SiHtml5, SiJquery, SiKubernetes, SiMongodb, SiMysql, SiNextdotjs, SiPrisma, SiPuppet, SiSocketdotio, SiStripe, SiTailwindcss, SiTensorflow, SiTypescript } from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io5'
 import { BiLogoPostgresql } from 'react-icons/bi'
 import { DiDigitalOcean, DiRedis } from 'react-icons/di'
 import { FcLinux } from 'react-icons/fc'
 
 const python = <FaPython size={30} />
+const githubactions = <SiGithubactions size={30} />
 const javaScript = <IoLogoJavascript size={30} />
-const flask = <SiFlask />
-const react = <FaReact />
-const linux = <FcLinux />
+const flask = <SiFlask size={30} />
+const react = <FaReact size={30} />
+const linux = <FcLinux size={30} />
 const typeScript = <SiTypescript size={30} />
-const C = <FaC size={40} />
-const django = <SiDjango />
-const tensorFlow = <SiTensorflow />
-const nodeJs = <FaNodeJs />
-const jQuery = <SiJquery />
-const d3Js = <SiD3Dotjs />
-const mySql = <SiMysql />
-const mongoDb = <SiMongodb />
-const postgreSql = <BiLogoPostgresql />
-const redis = <DiRedis />
-const aws = <FaAws />
-const gcp = <SiGooglecloud />
-const docker = <FaDocker />
-const kubernetes = <SiKubernetes />
-const puppet = <SiPuppet />
-const digitalOcean = <DiDigitalOcean />
-const html = <SiHtml5 />
-const css = <SiCss3 />
-const loadbalancer = <SiAwselasticloadbalancing />
-const socket = <SiSocketdotio />
-const nextjs = <SiNextdotjs />
-const tailwindcss = <SiTailwindcss />
-const stripe = <SiStripe />
-const prisma = <SiPrisma />
-const express = <SiExpress />
+const cLang = <FaC size={40} />
+const django = <SiDjango size={30} />
+const tensorFlow = <SiTensorflow size={30} />
+const nodeJs = <FaNodeJs size={30} />
+const jQuery = <SiJquery size={30} />
+const d3Js = <SiD3Dotjs size={30} />
+const mysql = <SiMysql size={30} />
+const mongoDb = <SiMongodb size={30} />
+const postgreSql = <BiLogoPostgresql size={30} />
+const redis = <DiRedis size={30} />
+const aws = <FaAws size={30} />
+const gcp = <SiGooglecloud size={30} />
+const docker = <FaDocker size={30} />
+const kubernetes = <SiKubernetes size={30} />
+const puppet = <SiPuppet size={30} />
+const digitalOcean = <DiDigitalOcean size={30} />
+const html = <SiHtml5 size={30} />
+const css = <SiCss3 size={30} />
+const loadbalancer = <SiAwselasticloadbalancing size={30} />
+const socket = <SiSocketdotio size={30} />
+const nextjs = <SiNextdotjs size={30} />
+const tailwindcss = <SiTailwindcss size={30} />
+const stripe = <SiStripe size={30} />
+const prisma = <SiPrisma size={30} />
+const express = <SiExpress size={30} />
 
 export const PROJECTS = [
     {
@@ -167,5 +168,33 @@ export const PROJECTS = [
         stack: [html, css, react, tailwindcss],
         stack_string: "html, css, react, tailwindcss",
         features: ["✨Animated Plots ✨Responsive Frontend ✨User's Profile"]
+    },
+    {
+        id: 11,
+        title: "Fabricare",
+        datetime: "26-Dec-2024",
+        render: 1,
+        link: "https://fabricare.vercel.app/",
+        thumbnail: "Images/Fabricare.png",
+        headline: "An e-commerce store with a dynamic user interface built using React allows users to shop for products, while admins manage inventory via a dedicated dashboard. The backend, powered by Python, handles business logic and integrates with Stripe for secure payments. MySQL stores product and order data, with Redis optimizing performance through caching. GitHub Actions automates CI/CD pipelines for efficient development, and AWS provides scalable hosting and infrastructure, ensuring a fast, secure, and reliable platform.",
+        loom: "https://www.loom.com/share/4d91169ec43d46f0b3769c04cdfea326?sid=93e79a45-ffa1-43c8-adef-91808ab275d1",
+        github: "https://github.com/Usool-Data-Science/FabriCare",
+        stack: [html, css, react, tailwindcss, stripe, redis, mysql, githubactions, aws, python, flask],
+        stack_string: "html, css, react, tailwindcss, stripe, redis, mysql, githubactions, aws, python, flask",
+        features: ["✨REST API ✨Responsive Frontend ✨User's Profile, ✨Database Migration, ✨Caching, ✨Payment Gateway, ✨Automated DevOps"]
+    },
+    {
+        id: 12,
+        title: "HomeBnB",
+        datetime: "29-Dec-2024",
+        render: 1,
+        link: "https://homebnb.jwsu.onrender.com/",
+        thumbnail: "Images/Fabricare.png",
+        headline: "A backend API service for social media apps that allows users to share their thoughts, follow others, and build memories.",
+        loom: "",
+        github: "https://github.com/Usool-Data-Science/HomeBnB",
+        stack: [mysql, githubactions, python, flask],
+        stack_string: "mysql, githubactions, python, flask",
+        features: ["✨REST API ✨Database Migration, ✨Caching,✨Automated DevOps"]
     },
 ]

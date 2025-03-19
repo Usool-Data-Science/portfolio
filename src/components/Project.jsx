@@ -9,6 +9,7 @@ const Project = ({ project }) => {
             <Card
                 direction={{ base: 'column', lg: 'row' }}
                 mb={"1rem"}
+                pt={{ base: '1rem' }}
                 overflow='hidden'
                 variant='outline'
             // width={"md"}
@@ -21,7 +22,7 @@ const Project = ({ project }) => {
                     alt='Caffe Latte'
                 />
 
-                <Stack>
+                <Stack flexGrow={1} >
                     <CardBody>
                         <Heading size='md'
                             pb={"1rem"}
@@ -62,8 +63,6 @@ const Project = ({ project }) => {
                                 <Button variant='ghost' colorScheme='blue'
                                     padding={"5px"}
                                 >
-
-
                                     <Tooltip hasArrow arrowSize={10} label='Watch Loom Presentation' placement='top-start'>
                                         <a target="_blank" href={project.loom}>
                                             <SiLoom size={40} /></a>
@@ -72,7 +71,7 @@ const Project = ({ project }) => {
                                 <Button variant='ghost' colorScheme='blue'
                                     padding={"5px"}
                                 >
-                                    <Tooltip hasArrow arrowSize={10} label='Visit the web' placement='top-start'>
+                                    <Tooltip hasArrow arrowSize={10} label={project.render && project.render === 1 ? 'Server might take 50secs to startup' : 'Navigate live'} placement='top-start' color={project.render && project.render === 1 ? 'red' : 'green'}>
                                         <a target="_blank" href={project.link}>
                                             <FaExternalLinkAlt size={40} />
                                         </a>
