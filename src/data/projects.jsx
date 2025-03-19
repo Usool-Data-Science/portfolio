@@ -171,8 +171,22 @@ export const PROJECTS = [
     },
     {
         id: 11,
+        title: "HomeBnB",
+        datetime: "29-Dec-2024",
+        render: 1,
+        link: "https://homebnb.jwsu.onrender.com/",
+        thumbnail: "Images/homebnb.PNG",
+        headline: "A backend API service for social media apps that allows users to share their thoughts, follow others, and build memories.",
+        loom: "",
+        github: "https://github.com/Usool-Data-Science/HomeBnB",
+        stack: [mysql, githubactions, python, flask],
+        stack_string: "mysql, githubactions, python, flask",
+        features: ["✨REST API ✨Database Migration, ✨Caching,✨Automated DevOps"]
+    },
+    {
+        id: 12,
         title: "Fabricare",
-        datetime: "26-Dec-2024",
+        datetime: "2-Jan-2025",
         render: 1,
         link: "https://fabricare.vercel.app/",
         thumbnail: "Images/Fabricare.png",
@@ -184,23 +198,9 @@ export const PROJECTS = [
         features: ["✨REST API ✨Responsive Frontend ✨User's Profile, ✨Database Migration, ✨Caching, ✨Payment Gateway, ✨Automated DevOps"]
     },
     {
-        id: 12,
-        title: "HomeBnB",
-        datetime: "29-Dec-2024",
-        render: 1,
-        link: "https://homebnb.jwsu.onrender.com/",
-        thumbnail: "Images/Fabricare.png",
-        headline: "A backend API service for social media apps that allows users to share their thoughts, follow others, and build memories.",
-        loom: "",
-        github: "https://github.com/Usool-Data-Science/HomeBnB",
-        stack: [mysql, githubactions, python, flask],
-        stack_string: "mysql, githubactions, python, flask",
-        features: ["✨REST API ✨Database Migration, ✨Caching,✨Automated DevOps"]
-    },
-    {
         id: 13,
         title: "MernChat",
-        datetime: "29-Dec-2024",
+        datetime: "2-Feb-2025",
         render: 1,
         link: "https://mern-chat-app-1lwr.onrender.com",
         thumbnail: "Images/mern-chat-app.png",
