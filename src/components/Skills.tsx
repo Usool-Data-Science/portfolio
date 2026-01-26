@@ -2,8 +2,6 @@ import { FaNodeJs } from "react-icons/fa6";
 import {
   SiPython,
   SiTypescript,
-  SiGo,
-  SiRust,
   SiPostgresql,
   SiMongodb,
   SiRedis,
@@ -25,6 +23,8 @@ import {
   SiRedux,
   SiReacthookform,
   SiTensorflow,
+  SiFastapi,
+  SiFlask,
 } from "react-icons/si";
 
 const skillCategories = [
@@ -33,8 +33,10 @@ const skillCategories = [
     description: "Building robust, scalable server-side systems",
     skills: [
       { name: "Python", icon: SiPython },
-      { name: "Node", icon: FaNodeJs },
       { name: "Django", icon: SiDjango },
+      { name: "Django", icon: SiFlask },
+      { name: "Django", icon: SiFastapi },
+      { name: "Node", icon: FaNodeJs },
       { name: "GraphQL", icon: SiGraphql },
       { name: "TypeScript", icon: SiTypescript },
     ],
@@ -58,7 +60,7 @@ const skillCategories = [
       { name: "Next.js", icon: SiNextdotjs },
       { name: "Redux", icon: SiRedux },
       { name: "React-Hook Form", icon: SiReacthookform },
-      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "TailwindCSS", icon: SiTailwindcss },
     ],
   },
   {

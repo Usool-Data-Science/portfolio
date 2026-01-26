@@ -125,7 +125,7 @@ const iconMap = {
   Kubernetes: SiKubernetes,
   Terraform: SiTerraform,
   AWS: FaAws,
-  Bandit: FaC, // Placeholder, replace with proper icon if available
+  Bandit: FaC,
   Snyk: FaC,
   Mailgun: FaC,
   GitHubActions: SiGithubactions,

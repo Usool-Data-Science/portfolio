@@ -35,7 +35,7 @@ const ProjectCard = ({
       <div className="relative aspect-video bg-muted overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/20 flex items-center justify-center">
           <div className="text-6xl font-bold text-primary/20">
-            {title.charAt(0)}
+            <img src={thumbnail} className="object-cover w-full h-full" />
           </div>
         </div>
         <div className="absolute top-4 left-4">
@@ -88,12 +88,15 @@ const ProjectCard = ({
               Live Demo
             </a>
           </Button>
-          <Button asChild variant="ghost" size="sm" className="gap-2">
-            <a href={github} target="_blank" rel="noopener noreferrer">
-              <Github className="w-4 h-4" />
-              Code
-            </a>
-          </Button>
+          {github && (
+            <Button asChild variant="ghost" size="sm" className="gap-2">
+              <a href={github} target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4" />
+                Code
+              </a>
+            </Button>
+          )}
+
           {loom && (
             <Button asChild variant="ghost" size="sm" className="gap-2">
               <a href={loom} target="_blank" rel="noopener noreferrer">
