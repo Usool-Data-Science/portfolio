@@ -18,10 +18,13 @@ const About = () => {
             {/* Left Column - Main Text */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a backend-focused full-stack engineer with 8+ years of
-                experience building systems that scale. I've led engineering
-                efforts at startups and contributed to infrastructure at larger
-                organizations.
+                I’m a full-stack engineer with 5+ years of experience building
+                scalable, production-grade systems, with a strong focus on
+                Python backend development and AI-driven integrations. I’ve led
+                backend architecture and delivery at startups while
+                collaborating closely across the stack, bringing a solid
+                understanding of frontend systems to deliver reliable,
+                end-to-end solutions.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 My work spans real-time data platforms, AI/ML integrations, and
@@ -41,19 +44,21 @@ const About = () => {
             <div className="space-y-8">
               <div className="grid grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <div className="text-4xl font-bold text-foreground">8+</div>
+                  <div className="text-4xl font-bold text-foreground">5+</div>
                   <div className="text-sm text-muted-foreground">
                     Years of Experience
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-4xl font-bold text-foreground">50+</div>
+                  <div className="text-4xl font-bold text-foreground">20+</div>
                   <div className="text-sm text-muted-foreground">
                     Projects Delivered
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-4xl font-bold text-foreground">15M+</div>
+                  <div className="text-4xl font-bold text-foreground">
+                    100K+
+                  </div>
                   <div className="text-sm text-muted-foreground">
                     API Requests/Day
                   </div>
